@@ -15,7 +15,7 @@
 @import url("chrome://messenger/skin/tagColors.css");
 @import url("chrome://messenger/skin/shared/mailWindow1.css");
 
-/* give the toolbox a min-height of 41px for Australis theme */
+/* give the toolbox a min-height of 42px for Australis theme */
 .mail-toolbox:not([mode="full"]) > toolbar:only-of-type,
 .mail-toolbox[mode="full"][labelalign="end"] > toolbar:only-of-type {
   margin-top: 6px;
@@ -30,7 +30,7 @@ toolbar:only-of-type {
 }
 
 .mail-toolbox[mode="text"]:not([mode="full"]) > toolbar:only-of-type {
-  margin-top: 4px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -50,7 +50,6 @@ toolbar:only-of-type {
 
 treechildren::-moz-tree-row(dummy)  {
   background-color:  #F0F0F0;
-  margin-bottom: 1px;
   -moz-padding-start: 2px;
 }
 
@@ -71,6 +70,10 @@ treechildren::-moz-tree-cell-text(imapdeleted) {
 }
 
 /* ::::: message column icons ::::: */
+
+.treecol-image:hover:active {
+  -moz-padding-start: 1px;
+}
 
 .treecol-image image {
   -moz-padding-end: 4px;
